@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header styling */
+header {
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+}
+header>h1{
+    margin: 0.2rem;
+    font-weight:bolder;
+}
