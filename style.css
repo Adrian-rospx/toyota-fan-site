@@ -19,18 +19,22 @@ header>h1{
 
 /* Navigation bar styling */
 nav {
-    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    justify-self: center;
+    align-items: center;
+    width: 100%;
     background-color: white;
     color: black;
 }
 nav #nav-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
     padding: 0.4em;
 }
 nav a {
-    min-width: 4em;
+    width: 100%;
     margin-left: 1em;
     margin-right: 1em;
     padding-left: 1em;
@@ -43,7 +47,9 @@ nav a {
     font-weight: bold;
 }
 nav #redline{
-    margin: 0;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
     padding: 0.4em;
     background-color: red;
 }
