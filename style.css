@@ -1,18 +1,22 @@
 body {
     margin: 0;
+    padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
     line-height: 1.5;
+    background-color: lightgrey; /*color for dev purposes*/
 }
 
 /* Header styling */
 header {
-    padding: 0.2em;
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding: 0.2em;
     background-color: red;
     color: white;
 }
-header>h1{
+header>h1 {
     margin: 0.2em;
     font-weight:bolder;
 }
@@ -31,7 +35,7 @@ nav #nav-container {
     justify-content: center;
     max-width: 1000px;
     width: 100%;
-    padding: 0.4em;
+    padding: 0.4em 0;
 }
 nav a {
     width: 100%;
@@ -44,15 +48,47 @@ nav a {
     text-align: center;
     font-weight: bold;
 }
-nav #redline{
+nav #nav-redline {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    padding: 0.4em;
+    padding: 0.4em 0;
     background-color: red;
 }
 
 /* Intro section styling */
 .intro #hilux-pic {
     width: 100%;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+footer #footer-redline {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.4em 0;
+    background-color: red;
+}
+footer #footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0;
+}
+footer #footer-info {
+    max-width: 800px;
+}
+footer #footer-separator {
+    width: 3px;
+    margin: 0 1em;
+    background-color: black;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
