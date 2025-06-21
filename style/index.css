@@ -7,6 +7,12 @@ body {
     line-height: 1.5;
     background-color: silver; /*color for dev purposes*/
 }
+.redline {
+    margin: 0 auto;
+    padding: 0.4em 0;
+    width: 100%;
+    background-color: red;
+}
 
 /* Header styling */
 header {
@@ -49,12 +55,6 @@ nav a {
     text-align: center;
     font-weight: bold;
 }
-nav #nav-redline {
-    margin: 0 auto;
-    padding: 0.4em 0;
-    width: 100%;
-    background-color: red;
-}
 
 /* Main section layout */
 main {
@@ -63,6 +63,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 /* Footer styling */

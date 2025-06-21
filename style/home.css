@@ -1,3 +1,7 @@
+main .redline {
+    max-width: 1200px;
+}
+
 /* Image container styling */
 div.image-container {
     max-width: 1200px;
@@ -39,9 +43,7 @@ div.image-container:hover div.image-overlay{
 /* For mobile */
 @media (max-width: 780px) {
     div.image-container img.car-pic {
-        width: 100%;
         height: 600px;
-        object-fit: cover;
     }
 
     div.image-overlay {
