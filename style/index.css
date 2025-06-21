@@ -5,7 +5,7 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     line-height: 1.5;
-    background-color: lightgrey; /*color for dev purposes*/
+    background-color: silver; /*color for dev purposes*/
 }
 
 /* Header styling */
@@ -56,9 +56,13 @@ nav #nav-redline {
     background-color: red;
 }
 
-/* Main section styling */
+/* Main section layout */
 main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer styling */
@@ -67,7 +71,7 @@ footer {
     flex-direction: column;
     background-color: white;
 }
-footer .footer-redline {
+footer div.footer-redline {
     margin: 0 auto;
     padding: 0.4em 0;
     width: 100%;
@@ -82,7 +86,7 @@ footer #footer-container{
 footer #footer-info {
     max-width: 800px;
 }
-footer .footer-separator {
+footer div.footer-separator {
     margin: 0 1em;
     width: 3px;
     background-color: black;

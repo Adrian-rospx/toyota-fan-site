@@ -1,22 +1,30 @@
-/* General section styling */
-.image-container {
+/* Image container styling */
+div.image-container {
+    max-width: 1200px;
     position: relative;
-    display: inline-block;
+    display: block;
 }
-.image-container .car-pic {
+div.image-container img.car-pic {
     width: 100%;
     object-fit: cover;
     display: block;
 }
 
+@media (max-width: 600px) {
+    .image-container .car-pic {
+        width: 75%;
+    }
+}
+
 /* Overlay styling */
-.image-overlay {
+div.image-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     height: 30%; 
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+
+    background: linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.7)) ;
     color: white;
 
     display: flex;
@@ -29,6 +37,6 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-.image-container:hover .image-overlay{
+div.image-container:hover div.image-overlay{
     opacity: 1;
 }
