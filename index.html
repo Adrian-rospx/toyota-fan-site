@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toyota fan site</title>
+    <title>Toyota Fan Site</title>
 
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/home.css">
@@ -25,29 +25,46 @@
 
     <main>
 
-        <section class="intro">
-            <img src="media/hilux pic.jpg" alt="Hilux picture" id="hilux-pic">
+        <section id="intro">
+            <div class="image-container">
 
-            <h2>Built for adventure</h2>
+                <img class="car-pic"
+                     src="media/hilux pic.jpg" 
+                     alt="Hilux picture" id="hilux-pic">
+
+                <div class="image-overlay">
+                    <h2>Built for adventure</h2>
+                </div>
+
+            </div>
         </section>
 
-        <section class="performance">
-            <img src="media/corolla pic.jpg" alt="Corolla picture" id="corolla-pic">
+        <section id="performance">
+            <div class="image-container">
 
-            <h2>Performance and reliability</h2>
-            <p>
-                Cars made by people, for people.
-                Decades of experience and craftsmanship.
-                Not one piston left behind.
-            </p>
+                <img class="car-pic"
+                     src="media/corolla pic.jpg" 
+                     alt="Corolla picture" id="corolla-pic">
+                <div class="image-overlay">
+
+                    <h2>Performance and reliability</h2>
+    
+                    <p>
+                        Cars made for people, by people.
+                        Decades of experience and craftsmanship.
+                        Not one bolt wasted.
+                    </p>
+
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <div id="footer-redline"></div>
+        <div class="footer-redline"></div>
         <div id="footer-container">
-            <div id="footer-separator"></div>   
+            <div class="footer-separator"></div>   
             <div id="footer-info">
                 <p>
                     <strong>
@@ -68,8 +85,9 @@
                     </a>
                 </p>
             </div>
-            <div id="footer-separator"></div>            
+            <div class="footer-separator"></div>            
         </div>
+        <div class="footer-redline"></div>
     </footer>
 
 </body>

@@ -52,9 +52,13 @@ nav a {
 nav #nav-redline {
     margin: 0 auto;
     padding: 0.4em 0;
-    max-width: 1000px;
     width: 100%;
     background-color: red;
+}
+
+/* Main section styling */
+main {
+    width: 100%;
 }
 
 /* Footer styling */
@@ -63,7 +67,7 @@ footer {
     flex-direction: column;
     background-color: white;
 }
-footer #footer-redline {
+footer .footer-redline {
     margin: 0 auto;
     padding: 0.4em 0;
     width: 100%;
@@ -78,7 +82,7 @@ footer #footer-container{
 footer #footer-info {
     max-width: 800px;
 }
-footer #footer-separator {
+footer .footer-separator {
     margin: 0 1em;
     width: 3px;
     background-color: black;
