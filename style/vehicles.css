@@ -1,5 +1,5 @@
 
-/* Image container */
+/* Image container style */
 div.image-container {
     max-width: 1200px;
     width: 100%;
@@ -33,5 +33,16 @@ div.text-overlay {
     transition: opacity 0.3s ease-in-out;
 }
 div.image-container:hover div.text-overlay{
-    opacity: 1;
+    opacity: 0.9;
 }
+
+@media (max-width: 780px) {
+    div.image-container img.car-pic {
+        height: 600px;
+    }
+    div.text-overlay {
+        opacity: 0.9;
+    }
+}
+
+/* Stat table style */
