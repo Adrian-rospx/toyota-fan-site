@@ -1,10 +1,12 @@
 import * as http from "node:http";
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { fileURLToPath } from "node:url";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 // constants
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const currentDirectory = import.meta.dirname
 const publicDirectory = path.join(currentDirectory, "public");
 

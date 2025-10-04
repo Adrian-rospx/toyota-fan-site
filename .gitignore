@@ -1,2 +1,5 @@
+# environment
+.env
+
 # dependecies
 node_modules
