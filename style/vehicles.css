@@ -11,3 +11,27 @@ div.image-container img.car-pic {
     object-fit: cover;
     display: block;
 }
+
+/* Text overlay */
+div.text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    width: 28%;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+div.image-container:hover div.text-overlay{
+    opacity: 1;
+}
