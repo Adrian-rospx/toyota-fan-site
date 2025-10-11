@@ -3,7 +3,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({quiet : true});
 
 // constants
 const PORT = process.env.PORT || 3000;
@@ -12,7 +12,9 @@ const publicDirectory = path.join(currentDirectory, "public");
 
 // server creation
 const server = http.createServer((req, res) => {
-    console.log(`${req.method} ${req.url}`);
+    const date = new Date().toLocaleString();
+    console.log(`From ${req.socket.address().address} at ${date} recieved: `+
+                `${req.method} ${req.url}`);
 
     // default to index.html if root is requested
     let filePath = req.url === "/" ? "index.html" : req.url;
@@ -52,5 +54,9 @@ const server = http.createServer((req, res) => {
 
 // start server on port
 server.listen(PORT, () => {
+    const localDate = new Date().toLocaleString();
+    const timeZone = new Date().getTimezoneOffset() / 60;
+
     console.log(`Server running at http://localhost:${PORT}`);
+    console.log(`Started at: ${localDate} GMT${timeZone}:00\n`);
 })

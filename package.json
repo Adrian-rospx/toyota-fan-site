@@ -1,7 +1,7 @@
 {
   "name": "toyota-fan-site",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Car brand static website for learning",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/Adrian-rospx/toyota-fan-site.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adrian-rospx",
   "license": "ISC",
   "type": "module",
   "bugs": {
