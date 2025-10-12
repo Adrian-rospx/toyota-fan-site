@@ -2,7 +2,7 @@
   "name": "toyota-fan-site",
   "version": "1.1.0",
   "description": "Car brand static website for learning",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"

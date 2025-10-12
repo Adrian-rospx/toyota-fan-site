@@ -13,7 +13,9 @@ const publicDirectory = path.join(currentDirectory, "public");
 // server creation
 const server = http.createServer((req, res) => {
     const date = new Date().toLocaleString();
-    console.log(`From ${req.socket.address().address} at ${date} recieved: `+
+    const ip = req.headers['x-forwarded-for'];
+    console.log(`From ip ${ip} ` + 
+                `on date ${date} recieved: ` +
                 `${req.method} ${req.url}`);
 
     // default to index.html if root is requested

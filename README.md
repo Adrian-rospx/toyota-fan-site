@@ -4,6 +4,8 @@ Personal website project for applying web development concepts.
 Done using raw HTML, CSS and NodeJS backend.
 Server configured with Nginx and deployed on a raspberry pi.
 
+![Website picture](images/website1.png)
+
 For deployment, make sure you have:
 
 - `.env` file with your PORT variable
