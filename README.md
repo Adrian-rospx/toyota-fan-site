@@ -6,16 +6,22 @@ Server configured with Nginx and deployed on a raspberry pi.
 
 ![Website picture](images/website1.png)
 
+Run with docker:
+
+```bash
+docker build -t "car-site" .
+docker run -d --env-file .env -p 3000:3000 --name "car-site" car-site
+```
+
 For deployment, make sure you have:
 
 - `.env` file with your PORT variable
 - A TLS certificate
 - A domain address
-- `server.js` running
 
 ```bash
-cp deploy/nginx/toyota-fan-site.conf /etc/nginx/sites-available/
-ln /etc/nginx/sites-available/toyota-fan-site.conf /etc/nginx/sites-enabled/
+cp deploy/nginx/car-site.conf /etc/nginx/sites-available/
+ln /etc/nginx/sites-available/car-site.conf /etc/nginx/sites-enabled/
 
 sudo nginx -t
 sudo systemctl reload nginx
