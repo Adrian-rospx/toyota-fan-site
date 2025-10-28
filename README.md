@@ -9,15 +9,10 @@ Server configured with Nginx and deployed on a raspberry pi.
 Run with docker:
 
 ```bash
-docker build -t "car-site" .
-docker run -d --env-file .env -p 3000:3000 --name "car-site" car-site
+docker compose up
 ```
 
-For deployment, make sure you have:
-
-- `.env` file with your PORT variable
-- A TLS certificate
-- A domain address
+For deployment, make sure you have a `.env` file with your PORT variable
 
 ```bash
 cp deploy/nginx/car-site.conf /etc/nginx/sites-available/

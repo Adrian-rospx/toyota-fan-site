@@ -1,0 +1,10 @@
+name: toyota-fan-site
+services:
+  web:
+    build: 
+      context: .
+    ports:
+      - "${PORT}:${PORT}"
+    env_file:
+      - ./.env
+    restart: always
